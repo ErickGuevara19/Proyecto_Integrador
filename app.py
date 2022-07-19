@@ -40,8 +40,8 @@ def add_student():
             cur.execute("INSERT INTO usuarios (id_usuario,nom_us1,nom_us2,ape_us1,ape_us2,calle_pri,calle_secu,nro_casa,parroquia,telefono, correo_electronico,contraseña,validacion,id_rol) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", (id_usuario,nom_us1,nom_us2,ape_us1,ape_us2,calle_pri,calle_secu,nro_casa,parroquia,telefono, email,password,validacion,id_rol))
             conn.commit()
             flash('Los Datos se han guardado exitosamente')
-            return render_template('index.html')
+            return render_template('index1.html')
         return render_template('index.html'), flash ('Los Datos no se han guardado exitosamente')
-    return render_template('index.html')     
+    return render_template('index1.html')     
 if __name__ == "__main__":
     app.run(debug=True)
