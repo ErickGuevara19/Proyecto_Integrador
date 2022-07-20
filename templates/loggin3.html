@@ -7,59 +7,31 @@
 </head>
 
 <body>
-<CENTER><h1>Ingresa Tus Datos 
-</h1> 
-<form id ="login" name="login" > 
+  <CENTER><h1>Ingresa Tus Datos </h1> 
+    <form id ="login"  method="post" action="val" > 
      <table width="200" border="0"> 
        <tr> 
          <th scope="row"><h2>Usuario</h2></th> 
          <td><span class="cnt"> 
-           <input name="usuario" type="text" class="Input" value="" size="20" /> 
+           <input name="email1" type="text" class="Input" value="" size="20" /> 
          </span></td> 
        </tr> 
        <tr> 
          <th height="33" scope="row"><h2>Clave</h2></th> 
          <td><span class="cnt"> 
-           <input name="password" type="password" class="Input" value="" size="20" /> 
+           <input name="password1" type="password" class="Input" value="" size="20" /> 
          </span></td> 
-         <td><span class="cnt"> 
-           <input value="Entrar" target="_parent" onclick="Login()" type="button" class="boton"/> 
-         </span></td>  
+         
        </tr> 
        <tr>
         <td><span class="cnt"> 
-          <a href ="registro.html"><input value="Registarse" target="_parent" onclick="registro()" type="button" class="boton"/> </a>
+          <button class="btn btn-primary btn-block">
+            ingresar
+          </button>
          </span></td>
        </tr>
      </table> 
-</form> </CENTER>
-
-<script language="JavaScript"> 
-function Login(){ 
-let done = 0; 
-let usuario = document.login.usuario.value; 
-let password = document.login.password.value; 
-if (usuario=="Erick" && password=="hola") { 
-window.location="index1.html"; 
-} 
-if (usuario=="Gavi" && password=="hello") { 
-window.location="index1.html"; 
-} 
-if (usuario=="" && password=="") { 
-alert("Usuario y contraseña no ingresados")
-}
-if ((usuario !=="Gavi" & usuario !== "Erick") & (password !=="hola" & password !== "hello")) {
-
-  alert("Usuario y contraseña incorrecto");
-  
-} 
-}    
-</script> 
-<script language="Javascript"> 
-
-document.oncontextmenu = function(){return false} 
-
-</script>
-
+    </form> 
+  </CENTER>
 </body>
 </html>
