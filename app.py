@@ -43,6 +43,5 @@ def add_student():
             return render_template('loggin3.html')
         return render_template('index.html'), flash ('Los Datos no se han guardado exitosamente')
     return render_template('loggin3.html')     
-
 if __name__ == "__main__":
     app.run(debug=True)
